@@ -1,18 +1,21 @@
-import video from "../data/video.js";
+import React from 'react';
+// import ReactDOM from "react-dom";
+import videoData from "../data/videoData.js";
+import Video from './Video';
+
+
+// Video Component - Child App.js
+// Video Information Compoenent - Child of Video.js
+// Video Comments Compoenent - Child of Video.js
+// Video Comment Compoenent - Child of VideoComments.js
+
 
 function App() {
-  console.log("Here's your data:", video);
+  // console.log("Here's your data:", video);
 
   return (
     <div className="App">
-      <iframe
-        width="919"
-        height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameBorder="0"
-        allowFullScreen
-        title="Thinking in React"
-      />
+      <Video videoData={videoData} />
     </div>
   );
 }
